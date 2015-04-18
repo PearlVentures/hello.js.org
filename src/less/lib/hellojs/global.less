@@ -1,0 +1,42 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background-color: #CFD956;
+}
+
+.landing-hero {
+  position: relative;
+  display: table;
+
+  height: 100%;
+  width: 100%;
+}
+
+.landing-vertical {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+  img {
+    margin: 0 0 120px 64px;
+  }
+
+  h2 {
+    margin-bottom: 48px;
+    font-size: floor(@font-size-h1 * 1.75);
+    line-height: floor(@font-size-h1 * 1.5);
+    text-transform: uppercase;
+  }
+
+  small {
+    display: block;
+    margin: 12px;
+    font-size: @font-size-large;
+    text-transform: none;
+    color: @gray-darker;
+  }
+}
