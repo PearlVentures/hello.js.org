@@ -14,7 +14,6 @@ var config       = require('../config'),
 gulp.task('styles', function () {
   var prod_env = gutil.env.p;
 
-console.log(prod_env);
   return gulp.src(config.styles.entries)
     .pipe(less())
     .on('data', logger.read.bind(null, config.styles.entries))
