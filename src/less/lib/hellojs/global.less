@@ -1,11 +1,13 @@
 html,
 body {
   height: 100%;
+  font-family: 'Ubuntu Mono', sans-serif;
 }
 
 body {
   position: relative;
   background-color: #CFD956;
+  color: @gray-base;
 }
 
 .landing-hero {
@@ -28,15 +30,16 @@ body {
   h2 {
     margin-bottom: 48px;
     font-size: floor(@font-size-h1 * 1.75);
+    font-weight: 700;
     line-height: floor(@font-size-h1 * 1.5);
     text-transform: uppercase;
   }
 
   small {
     display: block;
-    margin: 12px;
-    font-size: @font-size-large;
+    margin: 12px 0;
+    font-size: 40%;
     text-transform: none;
-    color: @gray-darker;
+    color: @gray-base;
   }
 }
