@@ -18,18 +18,18 @@ body {
   width: 100%;
 }
 
+.hero-brand {
+  margin: 20px 0 60px 5%;
+}
+
 .landing-vertical {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
 
-  .hero-brand {
-    margin: 0 0 120px 64px;
-  }
-
   h2 {
     margin-bottom: 48px;
-    font-size: floor(@font-size-h1 * 1.75);
+    font-size: floor(@font-size-h1 * 1.6);
     font-weight: 700;
     line-height: floor(@font-size-h1 * 1.5);
     text-transform: uppercase;
@@ -38,8 +38,32 @@ body {
   small {
     display: block;
     margin: 12px 0;
-    font-size: 40%;
+    font-size: 45%;
     text-transform: none;
     color: @gray-base;
+  }
+
+  .lead {
+    position: relative;
+    font-weight: 700;
+    text-transform: lowercase;
+
+    &:after {
+      position: absolute;
+      width: 0;
+
+      content: '...';
+      text-align: left;
+
+
+      overflow: hidden;
+      .animation(LoadingDots 2s steps(4, end) infinite);
+    }
+  }
+}
+
+@media (min-width: @screen-sm-min) {
+  .hero-brand {
+    margin: 0 0 120px 10%;
   }
 }
