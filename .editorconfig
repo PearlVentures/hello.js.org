@@ -16,3 +16,6 @@ indent_size = 2
 indent_style = space
 indent_size = 2
 insert_final_newline = false
+
+[CNAME]
+insert_final_newline = false
