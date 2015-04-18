@@ -18,6 +18,14 @@ module.exports = {
     dest: './public/assets/js'
   },
 
+  browserSync: {
+    port: 5000,
+    host: 'hellojs.dev',
+    open: 'external',
+    server: {
+      baseDir: './'
+    }
+  },
 
   minifyCSS: {
     keepBreaks: false,
